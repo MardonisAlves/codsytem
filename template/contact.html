@@ -1,0 +1,19 @@
+
+<div class="container-fluid" id="contact">
+<br><br><br>
+<h3 class="text-center">Contato</h3>
+<form ng-hide="hideform" name="sms" action="class/Insert.php" method="post">
+<br>
+    <label>Name:</label>
+    <input class="w3-input w3-border" type="text"  ng-model="name" placeholder="Name" name=nome required>
+  <br>
+    <label>E-mail:</label>
+    <input class="w3-input w3-border" type="email" ng-model="email" placeholder="E-mail" name=email required>
+  <br>
+    <label>Assunto:</label>
+    
+    <textarea class="w3-input w3-border" ng-model="textarea" placeholder="Message" name="comentario" required></textarea>
+ <br>
+<button class="w3-btn w3-black w3-ripple" ng-disabled="error || incomplete">&#10004;Enviar</button>
+</form>
+</div>
